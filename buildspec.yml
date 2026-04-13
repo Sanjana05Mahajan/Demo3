@@ -3,8 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "No build required"
+      - echo "Zipping code..."
+      - zip -r function.zip lambda_function.py
 
 artifacts:
   files:
-    - '**/*'
+    - function.zip
